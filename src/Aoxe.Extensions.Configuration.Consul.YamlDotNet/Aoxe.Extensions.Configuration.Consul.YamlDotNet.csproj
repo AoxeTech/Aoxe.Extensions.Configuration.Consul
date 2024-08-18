@@ -5,7 +5,7 @@
         <PackageVersion>2024.2.0</PackageVersion>
         <Version>2024.2.0</Version>
         <Description>Use consul as a configuration source.</Description>
-        <PackageTags>Aoxe;Configuration;Consul;Json</PackageTags>
+        <PackageTags>Aoxe;Configuration;Consul;Xml</PackageTags>
         <PackageProjectUrl>https://github.com/AoxeTech</PackageProjectUrl>
         <RepositoryUrl>https://github.com/AoxeTech/Aoxe.Extensions.Configuration.Consul</RepositoryUrl>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
@@ -24,7 +24,7 @@
 
     <ItemGroup>
         <PackageReference Include="Aoxe.Extensions.Configuration.Consul" Version="2024.2.0" />
-        <PackageReference Include="Aoxe.Extensions.Configuration.Flattener.Json" Version="2024.2.1" />
+        <PackageReference Include="Aoxe.Extensions.Configuration.Flattener.YamlDotNet" Version="2024.2.0" />
         <PackageReference Include="Microsoft.Extensions.Configuration" Version="8.0.0" />
         <PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0">
             <PrivateAssets>all</PrivateAssets>
