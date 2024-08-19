@@ -4,7 +4,7 @@
 		<TargetFrameworks>netstandard2.0;net6.0;net8.0;net9.0</TargetFrameworks>
 		<PackageVersion>2024.2.1</PackageVersion>
 		<Version>2024.2.1</Version>
-		<Description>Use consul as configuration.</Description>
+        <Description>Let the consul as a configuration source.</Description>
 		<PackageTags>Aoxe;Configuration;Consul</PackageTags>
 		<PackageProjectUrl>https://github.com/AoxeTech</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/AoxeTech/Aoxe.Extensions.Configuration.Consul</RepositoryUrl>
