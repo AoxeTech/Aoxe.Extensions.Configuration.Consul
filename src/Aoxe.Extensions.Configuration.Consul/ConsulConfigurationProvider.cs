@@ -1,8 +1,9 @@
 ﻿namespace Aoxe.Extensions.Configuration.Consul;
 
-public class ConsulConfigurationProvider(ConsulConfigurationSource source, IFlattener? flattener)
-    : ConfigurationProvider,
-        IDisposable
+public class ConsulConfigurationProvider(
+    ConsulConfigurationSource source,
+    IFlattener? flattener = null
+) : ConfigurationProvider, IDisposable
 {
     private readonly ConsulClient _consulClient = new(source.ConsulClientConfiguration);
 
