@@ -95,77 +95,23 @@ Taking Json format configuration as an example, we now have a json content which
 
 ```json
 {
-  "jsonApp": {
-    "jsonName": "JsonApp",
-    "jsonVersion": "1.2.3",
-    "jsonEnabled": true,
-    "jsonNull": null,
-    "jsonArray": [
-      {
-        "name": "apple"
-      },
-      {
-        "name": "pear"
-      }
-    ]
+  "stringKey": "stringValue",
+  "numberKey": 123,
+  "booleanKey": true,
+  "nullKey": null,
+  "nestedObject": {
+    "nestedStringKey": "nestedStringValue",
+    "nestedNumberKey": 456,
+    "nestedBooleanKey": false,
+    "nestedNullKey": null
   },
-  "database": {
-    "host": "localhost",
-    "port": 5432,
-    "credentials": {
-      "username": "admin",
-      "password": "secret"
-    },
-    "dbname": "myappdb"
-  },
-  "logging": {
-    "level": "DEBUG",
-    "file": "/var/log/myapp.log"
-  },
-  "paths": {
-    "home": "/home/user",
-    "config": "/etc/myapp/config.json",
-    "data": "/var/lib/myapp/data"
-  },
-  "userSettings": {
-    "theme": "dark",
-    "language": "en-US",
-    "notifications": true
-  },
-  "network": {
-    "proxy": "http://proxy.example.com:8080",
-    "timeout": 30,
-    "retry": 3
-  },
-  "advanced": {
-    "cacheSize": 1024,
-    "maxThreads": 8,
-    "debugMode": false
-  },
-  "plugins": {
-    "plugin1": "enabled",
-    "plugin2": "disabled",
-    "plugin3": "enabled"
-  },
-  "encryption": {
-    "method": "AES256",
-    "key": "abcdef1234567890"
-  },
-  "servers": [
+  "arrayKey": [
+    "arrayStringValue",
+    789,
+    false,
+    null,
     {
-      "name": "alpha",
-      "ip": "192.168.1.1",
-      "role": "frontend"
-    },
-    {
-      "name": "beta",
-      "ip": "192.168.1.2",
-      "role": "backend"
-    },
-    {
-      "name": "gamma",
-      "ip": "192.168.1.3",
-      "role": "database"
+      "arrayNestedObjectKey": "arrayNestedObjectValue"
     }
   ]
 }
