@@ -1,11 +1,6 @@
 ﻿namespace Aoxe.Extensions.Configuration.Consul;
 
-internal interface IConsulClientFactory
+public interface IConsulClientFactory
 {
-    ConsulClient Create(ConsulClientConfiguration consulClientConfiguration);
-    ConsulClient Create(
-        Action<ConsulClientConfiguration>? configOverride,
-        Action<HttpClient>? clientOverride,
-        Action<HttpClientHandler>? handlerOverride
-    );
+    ConsulClient Create();
 }

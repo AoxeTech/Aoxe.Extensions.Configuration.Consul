@@ -10,5 +10,5 @@ public class ConsulConfigurationSource(
     public string Key { get; } = key;
 
     public IConfigurationProvider Build(IConfigurationBuilder builder) =>
-        new ConsulConfigurationProvider(this, flattener);
+        new ConsulConfigurationProvider(this, new ConsulClientFactory(this), flattener);
 }

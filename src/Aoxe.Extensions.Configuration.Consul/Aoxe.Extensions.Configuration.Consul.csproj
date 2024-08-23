@@ -2,8 +2,8 @@
 	
 	<PropertyGroup>
 		<TargetFrameworks>netstandard2.0;net6.0;net8.0;net9.0</TargetFrameworks>
-		<PackageVersion>2024.2.1</PackageVersion>
-		<Version>2024.2.1</Version>
+		<PackageVersion>2024.2.2</PackageVersion>
+		<Version>2024.2.2</Version>
         <Description>Let the consul as a configuration source.</Description>
 		<PackageTags>Aoxe;Configuration;Consul</PackageTags>
 		<PackageProjectUrl>https://github.com/AoxeTech</PackageProjectUrl>
