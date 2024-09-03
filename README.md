@@ -1,6 +1,10 @@
 # Aoxe.Extensions.Configuration.Consul
 
-Let the consul as a configuration source.
+English | [简体中文](README-zh_CN.md)
+
+---
+
+Let the consul as a configuration source, include several configuration sources and several parsers (Json / Xml / Ini / Toml / Yaml).
 
 - [Aoxe.Extensions.Configuration](https://github.com/AoxeTech/Aoxe.Extensions.Configuration)
 - [Aoxe.Extensions.Configuration.Consul](https://github.com/AoxeTech/Aoxe.Extensions.Configuration.Consul)
@@ -13,7 +17,7 @@ The Microsoft.Extensions.Configuration provide develops out of box and powerful 
 
 ### 1.1. The parser is the core function but hasn't been defined to public, this design affects modularity and reuse
 
-Every configuration is base on its stream version with the same format, like JsonConfigurationProvider and JsonStreamConfigurationProvider etc. In the stream provider it use serializer to parse the structure stream into a Dictionary<string, string?>. But in these offical configuration providers the parser classes or functions were defined to internal or pravite.
+Every configuration is base on its stream version with the same format, like JsonConfigurationProvider / JsonStreamConfigurationProvider and XmlConfigurationProvider / XmlStreamConfigurationProvider etc. In the stream provider it use serializer to parse the structure stream into a Dictionary<string, string?>. But in these offical configuration providers the parser classes or functions were defined to internal or pravite.
 
 ### 1.2. Other serializers
 
@@ -75,7 +79,7 @@ In addition to configuration files, modern services increasingly rely on central
 
 #### 2.2.1. [Aoxe.Extensions.Configuration](https://github.com/AoxeTech/Aoxe.Extensions.Configuration)
 
-Because the abstractions of Flantten Aoxe.Extensions.Configuration support difference configuration files, like Json, Xml, Ini, Toml and Yaml.
+Because the abstractions of Flantten, Aoxe.Extensions.Configuration support difference configuration files, like Json, Xml, Ini, Toml and Yaml.
 
 #### 2.2.2. [Aoxe.Extensions.Configuration.Consul](https://github.com/AoxeTech/Aoxe.Extensions.Configuration.Consul)
 
