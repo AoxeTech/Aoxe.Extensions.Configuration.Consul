@@ -91,7 +91,7 @@ Microsoft.Extensions.Configuration 提供开箱即用的强大配置功能。它
 
 #### 2.2.4. [Aoxe.Extensions.Configuration.Redis](https://github.com/AoxeTech/Aoxe.Extensions.Configuration.Redis)
 
-[Redis（远程字典服务器）](https://redis.io/) 是一种开源的内存数据结构存储，可用作数据库、缓存和消息代理。它支持各种数据结构，如字符串、哈希值、列表、集合、排序集合、位图、超日志和地理空间索引。
+[Redis（远程字典服务器）](https://redis.io/) 是一种开源的内存数据结构存储，可用作数据库、缓存和消息代理。它支持各种数据结构，如字符串、哈希值、列表、集合、排序集合、位图、HyperLogLogs 和地理空间索引。
 
 ## 3. 如何使用
 
