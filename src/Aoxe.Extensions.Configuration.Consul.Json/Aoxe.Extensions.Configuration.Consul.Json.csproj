@@ -2,8 +2,8 @@
 
     <PropertyGroup>
         <TargetFrameworks>netstandard2.0;net6.0;net8.0;net9.0</TargetFrameworks>
-        <PackageVersion>2024.2.5</PackageVersion>
-        <Version>2024.2.5</Version>
+        <PackageVersion>2024.2.6</PackageVersion>
+        <Version>2024.2.6</Version>
         <Description>Let the consul as a configuration source.</Description>
         <PackageTags>Aoxe;Configuration;Consul;Json;System.Text.Json</PackageTags>
         <PackageProjectUrl>https://github.com/AoxeTech</PackageProjectUrl>
@@ -25,7 +25,7 @@
 
     <ItemGroup>
         <PackageReference Include="Aoxe.Extensions.Configuration.Consul" Version="2024.2.4" />
-        <PackageReference Include="Aoxe.Extensions.Configuration.Flattener.Json" Version="2024.2.2" />
+        <PackageReference Include="Aoxe.Extensions.Configuration.Flattener.Json" Version="2024.2.5" />
         <PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0">
             <PrivateAssets>all</PrivateAssets>
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>

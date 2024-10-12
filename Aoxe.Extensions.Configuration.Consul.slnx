@@ -1,0 +1,26 @@
+﻿<Solution>
+  <Folder Name="/src/">
+    <Project Path="src\Aoxe.Extensions.Configuration.Consul.IniParser\Aoxe.Extensions.Configuration.Consul.IniParser.csproj" Type="Classic C#" />
+    <Project Path="src\Aoxe.Extensions.Configuration.Consul.Ini\Aoxe.Extensions.Configuration.Consul.Ini.csproj" Type="Classic C#" />
+    <Project Path="src\Aoxe.Extensions.Configuration.Consul.Json\Aoxe.Extensions.Configuration.Consul.Json.csproj" Type="Classic C#" />
+    <Project Path="src\Aoxe.Extensions.Configuration.Consul.NewtonsoftJson\Aoxe.Extensions.Configuration.Consul.NewtonsoftJson.csproj" Type="Classic C#" />
+    <Project Path="src\Aoxe.Extensions.Configuration.Consul.SharpYaml\Aoxe.Extensions.Configuration.Consul.SharpYaml.csproj" Type="Classic C#" />
+    <Project Path="src\Aoxe.Extensions.Configuration.Consul.Tomlet\Aoxe.Extensions.Configuration.Consul.Tomlet.csproj" Type="Classic C#" />
+    <Project Path="src\Aoxe.Extensions.Configuration.Consul.Tomlyn\Aoxe.Extensions.Configuration.Consul.Tomlyn.csproj" Type="Classic C#" />
+    <Project Path="src\Aoxe.Extensions.Configuration.Consul.Xml\Aoxe.Extensions.Configuration.Consul.Xml.csproj" Type="Classic C#" />
+    <Project Path="src\Aoxe.Extensions.Configuration.Consul.YamlDotNet\Aoxe.Extensions.Configuration.Consul.YamlDotNet.csproj" Type="Classic C#" />
+    <Project Path="src\Aoxe.Extensions.Configuration.Consul\Aoxe.Extensions.Configuration.Consul.csproj" Type="Classic C#" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests\Aoxe.Extensions.Configuration.Consul.Ini.Test\Aoxe.Extensions.Configuration.Consul.Ini.Test.csproj" Type="Classic C#" />
+    <Project Path="tests\Aoxe.Extensions.Configuration.Consul.IniParser.Test\Aoxe.Extensions.Configuration.Consul.IniParser.Test.csproj" Type="Classic C#" />
+    <Project Path="tests\Aoxe.Extensions.Configuration.Consul.Json.Test\Aoxe.Extensions.Configuration.Consul.Json.Test.csproj" Type="Classic C#" />
+    <Project Path="tests\Aoxe.Extensions.Configuration.Consul.NewtonsoftJson.Test\Aoxe.Extensions.Configuration.Consul.NewtonsoftJson.Test.csproj" Type="Classic C#" />
+    <Project Path="tests\Aoxe.Extensions.Configuration.Consul.SharpYaml.Test\Aoxe.Extensions.Configuration.Consul.SharpYaml.Test.csproj" Type="Classic C#" />
+    <Project Path="tests\Aoxe.Extensions.Configuration.Consul.Test\Aoxe.Extensions.Configuration.Consul.Test.csproj" Type="Classic C#" />
+    <Project Path="tests\Aoxe.Extensions.Configuration.Consul.Tomlet.Test\Aoxe.Extensions.Configuration.Consul.Tomlet.Test.csproj" Type="Classic C#" />
+    <Project Path="tests\Aoxe.Extensions.Configuration.Consul.Tomlyn.Test\Aoxe.Extensions.Configuration.Consul.Tomlyn.Test.csproj" Type="Classic C#" />
+    <Project Path="tests\Aoxe.Extensions.Configuration.Consul.Xml.Test\Aoxe.Extensions.Configuration.Consul.Xml.Test.csproj" Type="Classic C#" />
+    <Project Path="tests\Aoxe.Extensions.Configuration.Consul.YamlDotNet.Test\Aoxe.Extensions.Configuration.Consul.YamlDotNet.Test.csproj" Type="Classic C#" />
+  </Folder>
+</Solution>
