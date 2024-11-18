@@ -3,8 +3,18 @@ namespace Aoxe.Extensions.Configuration.Consul.Tomlet.Test;
 public class ConsulConfigurationUnitTest
 {
     [Fact]
-    public void ConfigurationTest()
+    public async Task ConfigurationTest()
     {
+        using var consulClient = new ConsulClient();
+        await consulClient.KV.Put(
+            new KVPair("test-toml")
+            {
+                Value = Encoding.UTF8.GetBytes(
+                    "[nestedObject]\nnestedStringKey=\"nestedStringValue\""
+                )
+            }
+        );
+
         var configBuilder = new ConfigurationBuilder().AddConsul(
             new ConsulClientConfiguration
             {
@@ -19,8 +29,18 @@ public class ConsulConfigurationUnitTest
     }
 
     [Fact]
-    public void ConfigurationIniTest()
+    public async Task ConfigurationIniTest()
     {
+        using var consulClient = new ConsulClient();
+        await consulClient.KV.Put(
+            new KVPair("test-toml")
+            {
+                Value = Encoding.UTF8.GetBytes(
+                    "[nestedObject]\nnestedStringKey=\"nestedStringValue\""
+                )
+            }
+        );
+
         var configBuilder = new ConfigurationBuilder().AddConsulToml(
             new ConsulClientConfiguration
             {

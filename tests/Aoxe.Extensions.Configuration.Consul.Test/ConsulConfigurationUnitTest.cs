@@ -1,10 +1,22 @@
+using System.Text;
+
 namespace Aoxe.Extensions.Configuration.Consul.Test;
 
 public class ConsulConfigurationUnitTest
 {
     [Fact]
-    public void ConfigurationTest()
+    public async Task ConfigurationTest()
     {
+        using var consulClient = new ConsulClient();
+        await consulClient.KV.Put(
+            new KVPair("test-json")
+            {
+                Value = Encoding.UTF8.GetBytes(
+                    "{\"nestedObject\": {\"nestedStringKey\": \"nestedStringValue\"}}"
+                )
+            }
+        );
+
         var configBuilder = new ConfigurationBuilder().AddConsul(
             new ConsulClientConfiguration
             {
