@@ -1,21 +1,18 @@
 namespace Aoxe.Extensions.Configuration.Consul;
 
-public class ConsulConfigurationSource(
-    ConsulClientConfiguration consulClientConfiguration,
-    string key,
-    IFlattener? flattener = null
-) : IConfigurationSource
+public class ConsulConfigurationSource : IConfigurationSource
 {
-    public ConsulClientConfiguration ConsulClientConfiguration { get; } = consulClientConfiguration;
-    public string Key { get; } = key;
+    private readonly ConsulClient _client;
+    private readonly string _key;
 
-    public ConsulConfigurationSource(
-        Func<ConsulClientConfiguration> consulClientConfigurationFactory,
-        string key,
-        IFlattener? flattener = null
-    )
-        : this(consulClientConfigurationFactory(), key, flattener) { }
+    public ConsulConfigurationSource(ConsulClient client, string key)
+    {
+        _client = client;
+        _key = key;
+    }
 
-    public IConfigurationProvider Build(IConfigurationBuilder builder) =>
-        new ConsulConfigurationProvider(this, new ConsulClientFactory(this), flattener);
+    public IConfigurationProvider Build(IConfigurationBuilder builder)
+    {
+        return new ConsulConfigurationProvider(_client, _key);
+    }
 }
